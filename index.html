@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO meta tags — update description/keywords as needed -->
+    <meta name="description" content="STRYD Orthopedics — Informed Recovery. Real-time muscle activation and gait monitoring for at-home physical therapy rehabilitation.">
+    <meta name="keywords" content="STRYD, orthopedics, knee sleeve, rehabilitation, physical therapy, gait monitoring, muscle activation, wearable technology">
+    <title>STRYD Orthopedics | Informed Recovery</title>
+
+    <!-- Google Fonts: Space Grotesk (headings) + Inter (body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- NAVBAR — Fixed top nav with logo, links, CTA  -->
+    <!-- Adds .scrolled class via JS on scroll          -->
+    <!-- Mobile: hamburger toggle opens slide-out menu  -->
+    <!-- ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo: SVG recreation of STRYD parallelogram mark -->
+            <a href="#hero" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="8,8 32,8 24,32 0,32" fill="#0A7AFF"/>  <!-- Blue parallelogram -->
+                    <polygon points="20,12 44,12 36,36 12,36" fill="#000000"/> <!-- Black parallelogram -->
+                </svg>
+                <span class="logo-text">STRYD</span>
+            </a>
+
+            <!-- Nav links — smooth scroll to each section -->
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#product" class="nav-link">Product</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- CTA button in nav (hidden on mobile) -->
+            <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+
+            <!-- Mobile hamburger toggle (3 spans = 3 lines) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- HERO — Full-viewport intro section             -->
+    <!-- Left: tagline, subtitle, CTAs, stat bar        -->
+    <!-- Right: placeholder for knee sleeve hero image  -->
+    <!-- ============================================= -->
+    <section class="hero" id="hero">
+        <!-- Decorative grid background (fades at edges via CSS mask) -->
+        <div class="hero-bg-grid"></div>
+
+        <div class="hero-container">
+            <!-- Left column: text content -->
+            <div class="hero-content">
+                <!-- Pill badge with pulsing dot -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Next-Gen Rehabilitation Technology
+                </div>
+
+                <!-- Main headline — "Recovery" gets blue gradient via .title-accent -->
+                <h1 class="hero-title">
+                    Informed<br><span class="title-accent">Recovery</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Real-time muscle activation and gait analysis — bringing clinical-grade rehabilitation intelligence to your home.
+                </p>
+
+                <!-- Two CTA buttons -->
+                <div class="hero-actions">
+                    <a href="#waitlist" class="btn btn-primary">Get Early Access</a>
+                    <a href="#technology" class="btn btn-secondary">Explore the Tech</a>
+                </div>
+
+                <!-- Stats bar showing key value props -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">Real-Time</span>
+                        <span class="stat-label">Data Monitoring</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">sEMG + IMU</span>
+                        <span class="stat-label">Sensor Fusion</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">At-Home</span>
+                        <span class="stat-label">PT Rehabilitation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column: product demo video -->
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <video src="assets/videos/WebsiteProductDemo.mp4" autoplay muted loop playsinline class="hero-img" alt="STRYD Smart Knee Sleeve product demo"></video>
+                    <!-- Blue glow effect behind the video -->
+                    <div class="hero-image-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator at bottom of hero -->
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- TECHNOLOGY — Explains the core tech stack      -->
+    <!-- Grid of cards: 1 large featured + 4 standard   -->
+    <!-- ============================================= -->
+    <section class="technology" id="technology">
+        <div class="section-container">
+            <!-- Section header: tag, title, description -->
+            <div class="section-header">
+                <span class="section-tag">Our Technology</span>
+                <h2 class="section-title">Software Driven.<br><span class="title-accent">Hardware Enabled.</span></h2>
+                <p class="section-description">
+                    STRYD combines advanced biosensing hardware with intelligent software to deliver real-time muscle activation and gait analytics — directly to patients recovering at home.
+                </p>
+            </div>
+
+            <!-- Tech cards grid (3 columns, first card spans all 3) -->
+            <div class="tech-grid">
+                <!-- Featured card: EMG monitoring (spans full width, has animated wave visual) -->
+                <div class="tech-card tech-card-large">
+                    <div class="tech-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/> <!-- Heartbeat/signal icon -->
+                        </svg>
+                    </div>
+                    <h3>Real-Time Muscle Activation Monitoring</h3>
+                    <p>Embedded EMG sensors capture electrical signals from muscle contractions, providing real-time feedback on muscle engagement patterns during rehabilitation exercises.</p>
+                    <!-- Animated EMG graph visual -->
+                    <div class="tech-card-visual">
+                        <div class="emg-graph">
+                            <svg viewBox="0 0 400 180" preserveAspectRatio="none" class="emg-axes">
+                                <!-- Y axis -->
+                                <line x1="40" y1="10" x2="40" y2="160" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- X axis -->
+                                <line x1="40" y1="160" x2="390" y2="160" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- Grid lines -->
+                                <line x1="40" y1="50" x2="390" y2="50" stroke="var(--gray-800)" stroke-width="0.5" stroke-dasharray="4 4"/>
+                                <line x1="40" y1="90" x2="390" y2="90" stroke="var(--gray-800)" stroke-width="0.5" stroke-dasharray="4 4"/>
+                                <line x1="40" y1="130" x2="390" y2="130" stroke="var(--gray-800)" stroke-width="0.5" stroke-dasharray="4 4"/>
+                                <!-- Y axis labels -->
+                                <text x="8" y="54" fill="var(--gray-500)" font-size="9" font-family="var(--font-body)">100%</text>
+                                <text x="14" y="94" fill="var(--gray-500)" font-size="9" font-family="var(--font-body)">66%</text>
+                                <text x="14" y="134" fill="var(--gray-500)" font-size="9" font-family="var(--font-body)">33%</text>
+                                <text x="20" y="172" fill="var(--gray-500)" font-size="9" font-family="var(--font-body)">0%</text>
+                                <!-- X axis label -->
+                                <text x="200" y="178" fill="var(--gray-500)" font-size="9" font-family="var(--font-body)" text-anchor="middle">Time (s)</text>
+                            </svg>
+                            <!-- EMG signal line -->
+                            <svg viewBox="0 0 400 180" preserveAspectRatio="none" class="emg-signal">
+                                <polyline
+                                    fill="none"
+                                    stroke="url(#emgGradient)"
+                                    stroke-width="2.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    points="40,140 55,138 65,142 75,130 85,145 90,110 95,60 100,35 105,55 110,90 115,135 125,140 140,138 155,142 165,130 175,120 180,70 185,25 190,50 195,80 200,130 210,140 225,138 240,142 250,135 260,125 265,65 270,20 275,45 280,85 285,130 295,140 310,138 325,142 335,130 345,120 350,55 355,30 360,60 365,95 370,135 380,140 390,138"
+                                    class="emg-line"
+                                />
+                                <defs>
+                                    <linearGradient id="emgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="var(--blue)" stop-opacity="0.3"/>
+                                        <stop offset="50%" stop-color="var(--blue-light)"/>
+                                        <stop offset="100%" stop-color="var(--blue)" stop-opacity="0.3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <!-- Glow under the signal -->
+                            <svg viewBox="0 0 400 180" preserveAspectRatio="none" class="emg-glow">
+                                <polygon
+                                    fill="url(#emgFill)"
+                                    opacity="0.15"
+                                    points="40,140 55,138 65,142 75,130 85,145 90,110 95,60 100,35 105,55 110,90 115,135 125,140 140,138 155,142 165,130 175,120 180,70 185,25 190,50 195,80 200,130 210,140 225,138 240,142 250,135 260,125 265,65 270,20 275,45 280,85 285,130 295,140 310,138 325,142 335,130 345,120 350,55 355,30 360,60 365,95 370,135 380,140 390,138 390,160 40,160"
+                                    class="emg-fill"
+                                />
+                                <defs>
+                                    <linearGradient id="emgFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--blue-light)"/>
+                                        <stop offset="100%" stop-color="transparent"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured card: At-Home Rehab (spans full width) -->
+                <div class="tech-card tech-card-large">
+                    <div class="tech-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3>At-Home Rehabilitation</h3>
+                    <p>Bringing clinical-grade monitoring out of the clinic and into patients' homes — enabling continuous, informed recovery without compromise.</p>
+                    <!-- Couch / home relaxation visual -->
+                    <div class="tech-card-visual">
+                        <div class="home-visual">
+                            <svg viewBox="0 0 400 200" class="home-scene">
+                                <!-- Floor line -->
+                                <line x1="20" y1="170" x2="380" y2="170" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- Couch body -->
+                                <rect x="80" y="100" width="240" height="60" rx="12" fill="var(--gray-800)" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- Couch seat cushions -->
+                                <rect x="90" y="105" width="110" height="30" rx="8" fill="var(--gray-750, #2a2a35)" stroke="var(--gray-700)" stroke-width="0.5"/>
+                                <rect x="205" y="105" width="110" height="30" rx="8" fill="var(--gray-750, #2a2a35)" stroke="var(--gray-700)" stroke-width="0.5"/>
+                                <!-- Couch back -->
+                                <rect x="80" y="65" width="240" height="40" rx="12" fill="var(--gray-800)" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- Left armrest -->
+                                <rect x="60" y="80" width="30" height="80" rx="10" fill="var(--gray-800)" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- Right armrest -->
+                                <rect x="310" y="80" width="30" height="80" rx="10" fill="var(--gray-800)" stroke="var(--gray-700)" stroke-width="1"/>
+                                <!-- Couch legs -->
+                                <rect x="95" y="160" width="8" height="12" rx="2" fill="var(--gray-700)"/>
+                                <rect x="297" y="160" width="8" height="12" rx="2" fill="var(--gray-700)"/>
+                                <!-- Throw pillow left -->
+                                <rect x="100" y="80" width="40" height="30" rx="6" fill="var(--gray-750, #2a2a35)" stroke="var(--gray-700)" stroke-width="0.5" transform="rotate(-10, 120, 95)"/>
+                                <!-- Throw pillow right -->
+                                <rect x="260" y="80" width="40" height="30" rx="6" fill="var(--gray-750, #2a2a35)" stroke="var(--gray-700)" stroke-width="0.5" transform="rotate(10, 280, 95)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard card: Gait Analysis -->
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Gait Analysis</h3>
+                    <p>IMU-based motion tracking captures detailed gait patterns, detecting asymmetries and tracking recovery progress over time.</p>
+                </div>
+
+                <!-- Standard card: Software Platform -->
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Intelligent Software Platform</h3>
+                    <p>Cloud-connected analytics dashboard delivers actionable insights to patients and clinicians, enabling data-driven rehabilitation decisions.</p>
+                </div>
+
+                <!-- Standard card: Progress Tracking -->
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18 17V9"/>
+                            <path d="M13 17V5"/>
+                            <path d="M8 17v-3"/>
+                        </svg>
+                    </div>
+                    <h3>Progress Tracking</h3>
+                    <p>Longitudinal data collection enables visualization of recovery milestones, compliance metrics, and outcome trends for optimized rehabilitation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- PRODUCT — Showcase the knee sleeve             -->
+    <!-- Main image + 4-image gallery + feature pills   -->
+    <!-- TODO: Replace all .image-placeholder with <img> -->
+    <!-- ============================================= -->
+    <section class="product" id="product">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">The Product</span>
+                <h2 class="section-title">Engineered for<br><span class="title-accent">Recovery</span></h2>
+                <p class="section-description">
+                    The STRYD Smart Knee Sleeve integrates seamlessly into your rehabilitation routine — comfortable enough for daily wear, powerful enough to capture every data point that matters.
+                </p>
+            </div>
+
+            <!--
+                Product showcase: CSS-cropped from a single composite image.
+                Each .crop-view uses object-fit/object-position to show a
+                specific region of sleeve-composite.png (1408x736).
+                Layout: large main image (center front) + 2x2 gallery grid.
+            -->
+            <div class="product-showcase">
+                <!-- Main large image: center front view of composite -->
+                <div class="product-main-image">
+                    <div class="crop-container crop-main">
+                        <img src="assets/images/sleeve-composite.png" alt="STRYD Knee Sleeve — front view" class="crop-view crop-center">
+                    </div>
+                </div>
+
+                <!-- 2x2 gallery: 4 different angles cropped from composite -->
+                <div class="product-gallery">
+                    <div class="gallery-item">
+                        <div class="crop-container crop-sm crop-top-left">
+                            <img src="assets/images/topleftkneesleeve.png" alt="STRYD Knee Sleeve — front angle" class="crop-view">
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="crop-container crop-sm crop-top-right">
+                            <img src="assets/images/toprightkneesleeve.png" alt="STRYD Knee Sleeve — side view" class="crop-view">
+                        </div>
+                    </div>
+                    <div class="gallery-item gallery-wide">
+                        <div class="crop-container crop-sm crop-bottom-left">
+                            <img src="assets/images/backsidesleevewebsite.png" alt="STRYD Knee Sleeve — back view" class="crop-view">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three product feature highlights -->
+            <div class="product-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h4>All-Day Comfort</h4>
+                    <p>Medical-grade knit fabric designed for extended wear during rehabilitation.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h4>Wireless Connectivity</h4>
+                    <p>Bluetooth-enabled sensors sync seamlessly with the STRYD platform.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h4>Clinical Grade</h4>
+                    <p>Research-validated sensor technology for reliable, actionable data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- WAITLIST — Email capture for early access      -->
+    <!-- Simple inline form: email input + submit btn   -->
+    <!-- Form submit handled in main.js (no backend)    -->
+    <!-- ============================================= -->
+    <section class="waitlist" id="waitlist">
+        <div class="section-container">
+            <div class="waitlist-content">
+                <span class="section-tag">Early Access</span>
+                <h2 class="section-title">Be First to Experience<br><span class="title-accent">Informed Recovery</span></h2>
+                <p class="section-description">
+                    Join the waitlist to get early access to the STRYD Smart Knee Sleeve and be part of the future of at-home rehabilitation.
+                </p>
+                <form class="waitlist-form" id="waitlistForm">
+                    <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <div class="form-inline">
+                        <input type="email" placeholder="Enter your email" required class="form-input" id="waitlistEmail">
+                        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+                    </div>
+                    <p class="form-note">No spam. We'll only reach out with product updates.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- CONTACT — Detailed inquiry form                -->
+    <!-- Left: company info (email, location)           -->
+    <!-- Right: form (name, email, phone, company,      -->
+    <!--         role dropdown, message)                 -->
+    <!-- TODO: Wire form to backend or mailto endpoint   -->
+    <!-- ============================================= -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-layout">
+                <!-- Left column: contact info -->
+                <div class="contact-info">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Let's Build the Future<br><span class="title-accent">of Recovery</span></h2>
+                    <p class="section-description">
+                        Whether you're a clinician, investor, or potential partner — we'd love to hear from you.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <!-- TODO: Update with your real company email -->
+                                <p>contact@strydortho.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>United States</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column: contact form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <!-- First + Last name side by side -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="optional">(Optional)</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <!-- Company + Role side by side -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company / Organization <span class="optional">(Optional)</span></label>
+                                <input type="text" id="company" name="company" placeholder="Acme Health">
+                            </div>
+                            <div class="form-group">
+                                <label for="role">I am a...</label>
+                                <select id="role" name="role" required>
+                                    <option value="" disabled selected>Select your role</option>
+                                    <option value="clinician">Clinician / Physical Therapist</option>
+                                    <option value="patient">Patient</option>
+                                    <option value="investor">Investor</option>
+                                    <option value="partner">Potential Partner</option>
+                                    <option value="researcher">Researcher</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- FOOTER — Brand, nav links, copyright           -->
+    <!-- ============================================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <!-- Logo + tagline -->
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <svg class="logo-icon" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="8,8 32,8 24,32 0,32" fill="#0A7AFF"/>
+                            <polygon points="20,12 44,12 36,36 12,36" fill="#ffffff"/>
+                        </svg>
+                        <span class="logo-text">STRYD</span>
+                    </a>
+                    <p class="footer-tagline">Informed Recovery</p>
+                </div>
+                <!-- Footer nav columns -->
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="#hero">Home</a>
+                        <a href="#technology">Technology</a>
+                        <a href="#product">Product</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#waitlist">Join Waitlist</a>
+                        <a href="#contact">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 STRYD Orthopedics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript: nav behavior, scroll animations, form handling -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
