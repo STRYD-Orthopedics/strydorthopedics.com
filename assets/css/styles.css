@@ -137,6 +137,11 @@ img {
     height: 28px;
 }
 
+.logo-img {
+    height: 85px;
+    width: auto;
+}
+
 .logo-text {
     font-family: var(--font-heading);
     font-size: 1.5rem;
